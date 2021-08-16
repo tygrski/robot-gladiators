@@ -1,5 +1,8 @@
 var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
-console.log(enemyNames.lenght);
+console.log(enemyNames.length);
+for(var i = 0; i < 3; i++) {
+  console.log("apple");
+}
 
 // var playerName = '  ';
 // var playerName = window.prompt("What is your robot's name?");
