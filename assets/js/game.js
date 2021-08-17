@@ -8,8 +8,7 @@ var enemyHealth = 50;
 var enemyAttack = 12;
 
 // fight function
-var fight = function(enemyName)
-{
+var fight = function(enemyName) {
 
 for(var i = 0; i < enemyNames.length; i++) {
   console.log(enemyNames[i] + " is at " + i + " index");
@@ -72,7 +71,7 @@ for(var i = 0; i < enemyNames.length; i++) {
   } else {
     window.alert("You need to pick a valid option. Try again!");
   }
-;
+
 
 // run fight function to start game
 for( var i = 0; i < enemyNames.length; i++) {
