@@ -1,7 +1,8 @@
 var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
+console.log(enemyNames);
 console.log(enemyNames.length);
-for(var i = 0; i < 3; i++) {
-  console.log("apple");
+for(var i = 0; i < enemyNames.lenght; i++) {
+  console.log(enemyNames[i]);
 }
 
 // var playerName = '  ';
