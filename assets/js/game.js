@@ -3,21 +3,12 @@ var playerHealth = 100;
 var playerAttack = 10;
 var playerMoney = 10;
 
-var enemyNames = ['Roborto", "Amy Android", "Robo Trumble'];
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
 // fight function
-var fight = function(enemyName) {
-
-for(var i = 0; i < enemyNames.length; i++) {
-  console.log(enemyNames[i] + " is at " + i + " index");
-};
-}
-
-// You can also log multiple values at once like this
-// console.log(playerName, playerAttack, playerHealth);
-
+var fight = function(enemyName,i) {
 
   // Alert players that they are starting the round
   window.alert("Welcome to Robot Gladiators!");
@@ -30,20 +21,20 @@ for(var i = 0; i < enemyNames.length; i++) {
     // remove enemy's health by subtracting the amount set in the playerAttack variable
     enemyHealth = enemyHealth - playerAttack;
     console.log(
-      playerName + " attacked " + enemyNames + ". " + " now has " + enemyHealth + " health remaining."
+      playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining."
     );
 
     // check enemy's health
     if (enemyHealth <= 0) {
       window.alert( + " has died!");
     } else {
-      window.alert( enemyNames + " still has " + enemyHealth + " health left.");
+      window.alert( enemyName + " still has " + enemyHealth + " health left.");
     }
 
     // remove players's health by subtracting the amount set in the enemyAttack variable
     playerHealth = playerHealth - enemyAttack;
     console.log(
-      enemyNames + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
+      enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
     );
 
     // check player's health
@@ -71,9 +62,10 @@ for(var i = 0; i < enemyNames.length; i++) {
   } else {
     window.alert("You need to pick a valid option. Try again!");
   }
+}
 
 
 // run fight function to start game
 for( var i = 0; i < enemyNames.length; i++) {
-  fight(enemyNames[i]);
+  fight(enemyNames[i],i);
 }
