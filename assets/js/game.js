@@ -8,7 +8,7 @@ var enemyHealth = 50;
 var enemyAttack = 12;
 
 // fight function
-var fight = function(enemyName,i) {
+var fight = function(enemyName) {
 
   // Alert players that they are starting the round
   window.alert("Welcome to Robot Gladiators!");
@@ -67,5 +67,5 @@ var fight = function(enemyName,i) {
 
 // run fight function to start game
 for( var i = 0; i < enemyNames.length; i++) {
-  fight(enemyNames[i],i);
+  fight(enemyNames[i]);
 }
