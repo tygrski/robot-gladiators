@@ -1,24 +1,4 @@
-var playerInfo = {
-  name: window.prompt("What is your name?"),
-  health: 100,
-  attack: 10,
-  money: 10
-};
 
-var enemyInfo = [
-{
-  name: "Roborto",
-  attack: randomNumber(10,14)
-},
-{
-name: "Amy Android",
-attack: randomNumber(10,14)
-},
-{
-  name: "Robo trumble",
-  attack: randomNumber(10,14)
-}
-];
 
 console.log(enemyInfo.names);
 console.log(enemyInfo.length);
@@ -153,6 +133,26 @@ var randomNumber = function(min, max) {
 
   return value;
 };
+var playerInfo = {
+  name: window.prompt("What is your name?"),
+  health: 100,
+  attack: 10,
+  money: 10
+};
 
+var enemyInfo = [
+{
+  name: "Roborto",
+  attack: randomNumber(10,14)
+},
+{
+name: "Amy Android",
+attack: randomNumber(10,14)
+},
+{
+  name: "Robo trumble",
+  attack: randomNumber(10,14)
+}
+];
 // start the game when the page relaods
 startGame();
